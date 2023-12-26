@@ -1,0 +1,15 @@
+const HAS_SEND_EMAIL = true;
+// добавить файлы в тело письма в виде ссылок (В противном случае прикрепить)
+const HAS_ATTACH_IN_BODY = true;
+// базовый URL-адрес (используется, если составления полного URL для ссылок, добавляемых в тело письма)
+const BASE_URL = 'https://domain.com';
+// настройка почты (отправка осуществляется через SMTP)
+const EMAIL_SETTINGS = [
+  'addresses' => ['manager@domain.com'], // кому необходимо отправить письмо
+  'from' => ['no-reply@domain.com', 'Имя сайта'], // от какого email и имени необходимо отправить письмо
+  'subject' => 'Сообщение с формы обратной связи', // тема письма
+  'host' => 'ssl://smtp.yandex.ru', // SMTP-хост
+  'username' => 'name@yandex.ru', // // SMTP-пользователь
+  'password' => '*********', // SMTP-пароль
+  'port' => '465' // SMTP-порт
+];
